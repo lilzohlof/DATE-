@@ -1,0 +1,76 @@
+body {
+    background-color: #f7f9e7; /* Light Lemon */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+.btn {
+    padding: 20px 40px; /* Larger buttons */
+    border: none;
+    border-radius: 50%; /* Flower shape */
+    font-size: 20px;
+    color: white;
+    background-color: #f6c344; /* Dark Lemon */
+    cursor: pointer;
+    margin: 10px;
+    display: inline-block;
+}
+.background-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em; /* Larger text */
+    color: #f6c344; /* Dark Lemon */
+    opacity: 0.8; /* High opacity */
+    z-index: -1; /* Ensure it stays in the background */
+}
+.heart {
+    position: absolute;
+    font-size: 2em;
+    color: #f6c344; /* Dark Lemon */
+    pointer-events: none;
+    animation: moveHearts 3s ease-in-out;
+}
+@keyframes moveHearts {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+}
+#message {
+    margin-top: 20px;
+}
+.sad-text {
+    color: #ff6f6f; /* Light Red */
+}
+#dayOffInput {
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%; /* Larger width to fit the alignment */
+    display: none; /* Hide initially */
+}
+#submitButton {
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f6c344; /* Dark Lemon */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: none; /* Hide initially */
+}

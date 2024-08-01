@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-text">Knock Knock</div>
+    <div class="container">
+        <h1>This is a formal invitation to go on a date with me, will you Zohra?</h1>
+        <button id="yesButton" class="btn">Yes</button>
+        <button id="noButton" class="btn">No</button>
+        <div id="message"></div>
+        <form id="contact-form" action="https://formspree.io/f/mpwadlny" method="POST">
+            <input type="text" name="day_off" id="dayOffInput" placeholder="Your day off">
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
